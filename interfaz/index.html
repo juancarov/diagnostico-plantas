@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Diagnóstico de Plantas</title>
+  <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+  <main class="card">
+    <h1>Diagnóstico de Plantas</h1>
+    <p class="subtitle">Ingresa la medición actual y consulta el estado de tu planta.</p>
+
+    <form id="diagnostico-form">
+      <label for="especie">Especie</label>
+      <select id="especie" name="especie" required>
+        <option value="" disabled selected>Cargando especies...</option>
+      </select>
+
+      <label for="humedad">Humedad del sustrato (%)</label>
+      <input type="number" id="humedad" name="humedad" step="0.1" required>
+
+      <label for="luz">Luz (lux)</label>
+      <input type="number" id="luz" name="luz" step="1" required>
+
+      <label for="temperatura">Temperatura (°C)</label>
+      <input type="number" id="temperatura" name="temperatura" step="0.1" required>
+
+      <button type="button" id="evaluar-btn">Evaluar</button>
+    </form>
+
+    <section id="resultado" class="resultado hidden">
+      <h2>Diagnóstico: <span id="estado-global"></span></h2>
+      <ul id="lista-parametros"></ul>
+      <div id="recomendaciones-wrap">
+        <h3>Recomendaciones</h3>
+        <ul id="lista-recomendaciones"></ul>
+      </div>
+    </section>
+
+    <p id="error-box" class="error hidden"></p>
+  </main>
+
+  <script src="logica.js"></script>
+</body>
+</html>

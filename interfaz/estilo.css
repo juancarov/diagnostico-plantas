@@ -1,0 +1,131 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #eef5ee;
+  font-family: "Segoe UI", Roboto, Arial, sans-serif;
+  color: #23331e;
+  padding: 1.5rem;
+}
+
+.card {
+  background: #ffffff;
+  padding: 2rem 2.5rem;
+  border-radius: 14px;
+  box-shadow: 0 10px 30px rgba(35, 51, 30, 0.12);
+  width: 100%;
+  max-width: 460px;
+}
+
+h1 {
+  margin: 0 0 0.25rem 0;
+  font-size: 1.5rem;
+  color: #2d5a27;
+}
+
+.subtitle {
+  margin: 0 0 1.5rem 0;
+  font-size: 0.9rem;
+  color: #5a6b55;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+}
+
+label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-top: 0.6rem;
+}
+
+input,
+select {
+  padding: 0.55rem 0.6rem;
+  border: 1px solid #cdd9c9;
+  border-radius: 8px;
+  font-size: 0.95rem;
+}
+
+button {
+  margin-top: 1.4rem;
+  padding: 0.7rem;
+  border: none;
+  border-radius: 8px;
+  background: #2d5a27;
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+button:hover {
+  background: #244a1f;
+}
+
+button:disabled {
+  background: #9db097;
+  cursor: not-allowed;
+}
+
+.resultado {
+  margin-top: 1.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid #e1e9dd;
+}
+
+.resultado h2 {
+  font-size: 1.1rem;
+  margin: 0 0 0.6rem 0;
+}
+
+.resultado h3 {
+  font-size: 0.95rem;
+  margin: 1rem 0 0.3rem 0;
+}
+
+.resultado ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  font-size: 0.9rem;
+}
+
+.badge {
+  display: inline-block;
+  padding: 0.1rem 0.5rem;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  margin-left: 0.4rem;
+}
+
+.badge-BAJO { background: #fde2c9; color: #8a4b0a; }
+.badge-OPTIMO { background: #d9efd4; color: #2d5a27; }
+.badge-ALTO { background: #fbdada; color: #a3311c; }
+
+.badge-SALUDABLE { background: #d9efd4; color: #2d5a27; }
+.badge-EN_RIESGO { background: #fde2c9; color: #8a4b0a; }
+.badge-CRITICO { background: #fbdada; color: #a3311c; }
+
+.error {
+  margin-top: 1rem;
+  color: #a3311c;
+  font-size: 0.9rem;
+}
+
+.hidden {
+  display: none;
+}
