@@ -78,7 +78,4 @@ trae nombres de especie, y solo la humedad se relaciona con el estrés
 en ese dataset) — se usa para probar la API con datos reales en
 `utilidades/probar_con_lecturas_sensor.py`.
 
-## Pendiente
 
-Revisar si el margen de ±10 puntos de humedad es razonable o conviene
-justificar otro.
